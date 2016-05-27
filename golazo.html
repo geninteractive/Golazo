@@ -12,7 +12,7 @@
         <link href='https://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
     </head>
     <body>
-        <header class="header-interior">
+        <header class="header-interior header_golazo">
         </header>
         <div class="encabezado-interior container-fluid text-center">
             <img src="images/logo.png" alt="" class="logo" width="400">            
@@ -29,9 +29,8 @@
         </section>
         <section class="contenido container">
             <div class="contenedor1 col-md-6">
-                <h1>Golazo: social reconciliation strategy through sports</h1>
-                <p class="textos-largos">Golazo seeks to strengthen the social network and prevent violence through the promotion of soccer in boys, girls, teenagers and youth, bringing together sports components, the use of leisure time with an educational sense, training and family coexistence. Likewise, it promotes the construction of peace and reconciliation, the training in citizen values, coexistence and peaceful conflict resolution through sports and education. <br><br>
-                Golazo prevents the participants from being recruited by illegal groups, the use of psychoactive substances, school drop-outs, family and community violence.</p>
+                <h1>Golazo: Social reconciliation strategy through sports</h1>
+                <p class="textos-largos">Is a boys and girls soccer programdesigned to prevent youth violence and strengthen social networksin the communities it serves. Bringing together sports, and the use of leisure time with educational activities,youth benefit greatly from this important program. At the same time Golazoalso promotes the construction of peace and reconciliation, family coexistence the training in citizenship values, as well as coexistence and diplomatic conflict resolution through sports and education.</p>
             </div>
             <div class="contenedor1 col-md-6">
                 <iframe src="https://player.vimeo.com/video/37196396" width="100%" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
@@ -39,15 +38,21 @@
             </div>
             <div class="col-md-12">
                 <ul class="text-center">
-                    Direct beneficiaries
-                    <li>3.000 boys, girls, teenagers and youth.</li>
+                    Direct beneficiaries of this program include:
+                    <li>3,000 boys and girls, both teenagers and youth.</li>
                     <li>940 families.</li>
                     <li>28 community sports monitors.</li>
                 </ul>
             </div>
             <div class="col-md-12">
-                
-                <div class="imagen"></div>
+               <a id="example1" href="images/galeria/golazo_0018_b.jpg"><img class="imagen col-md-3" alt="Golazo's picture program" src="images/galeria/golazo_0018.jpg"/></a>
+               <a id="example1" href="images/galeria/golazo_0017_b.jpg"><img class="imagen col-md-3" alt="Golazo's picture program" src="images/galeria/golazo_0017.jpg"/></a>
+               <a id="example1" href="images/galeria/golazo_0016_b.jpg"><img class="imagen col-md-3" alt="Golazo's picture program" src="images/galeria/golazo_0016.jpg"/></a>
+               <a id="example1" href="images/galeria/golazo_0015_b.jpg"><img class="imagen col-md-3" alt="Golazo's picture program" src="images/galeria/golazo_0015.jpg"/></a>
+               <a id="example1" href="images/galeria/golazo_0014_b.jpg"><img class="imagen col-md-3" alt="Golazo's picture program" src="images/galeria/golazo_0014.jpg"/></a>
+               <a id="example1" href="images/galeria/golazo_0013_b.jpg"><img class="imagen col-md-3" alt="Golazo's picture program" src="images/galeria/golazo_0013.jpg"/></a>
+               <a id="example1" href="images/galeria/golazo_0011_b.jpg"><img class="imagen col-md-3" alt="Golazo's picture program" src="images/galeria/golazo_0011.jpg"/></a>
+               <a id="example1" href="images/galeria/golazo_0010_b.jpg"><img class="imagen col-md-3" alt="Golazo's picture program" src="images/galeria/golazo_0010.jpg"/></a>      
             </div>
         </section>
         
@@ -57,4 +62,96 @@
             <a target="_blank" href="http://www.fundacióncarvajal.org.co">www.fundacióncarvajal.org.co</a></h4><br><br>
         </footer>
     </body>
+    
+<!--    fancy-->
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+	<script>
+		!window.jQuery && document.write('<script src="jquery-1.4.3.min.js"><\/script>');
+	</script>
+	<script type="text/javascript" src="fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+	<script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	<link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+<!-- 	<link rel="stylesheet" href="style.css" />-->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			*   Examples - images
+			*/
+
+			$("a#example1").fancybox();
+
+			$("a#example2").fancybox({
+				'overlayShow'	: false,
+				'transitionIn'	: 'elastic',
+				'transitionOut'	: 'elastic'
+			});
+
+			$("a#example3").fancybox({
+				'transitionIn'	: 'none',
+				'transitionOut'	: 'none'	
+			});
+
+			$("a#example4").fancybox({
+				'opacity'		: true,
+				'overlayShow'	: false,
+				'transitionIn'	: 'elastic',
+				'transitionOut'	: 'none'
+			});
+
+			$("a#example5").fancybox();
+
+			$("a#example6").fancybox({
+				'titlePosition'		: 'outside',
+				'overlayColor'		: '#000',
+				'overlayOpacity'	: 0.9
+			});
+
+			$("a#example7").fancybox({
+				'titlePosition'	: 'inside'
+			});
+
+			$("a#example8").fancybox({
+				'titlePosition'	: 'over'
+			});
+
+			$("a[rel=example_group]").fancybox({
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none',
+				'titlePosition' 	: 'over',
+				'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
+					return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
+				}
+			});
+
+			/*
+			*   Examples - various
+			*/
+
+			$("#various1").fancybox({
+				'titlePosition'		: 'inside',
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none'
+			});
+
+			$("#various2").fancybox();
+
+			$("#various3").fancybox({
+				'width'				: '75%',
+				'height'			: '75%',
+				'autoScale'			: false,
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none',
+				'type'				: 'iframe'
+			});
+
+			$("#various4").fancybox({
+				'padding'			: 0,
+				'autoScale'			: false,
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none'
+			});
+		});
+	</script>
+
 </html>
